@@ -10,3 +10,41 @@ Prince
 - Creating of Wind plots, using Matplotlib and its extension as Cartopy.
 - Introduces the colorbar and title to the plot.
   
+## Installation 
+
+```bash 
+git clone https://github.com/emanuel-gf/Windy-Matplotlib-Manim-GeoViz.git
+cd windy-matplotlib-Manim-Geoviz
+```
+
+2. Create and Activate a environment 
+
+You can do it by using conda or using uv
+
+```bash 
+conda create -n manim python==3.13.3
+conda activate manim
+```
+
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Set up your credentials by creating a .env file in the root directory of your project.
+
+```bash
+# In case linux or mac
+touch .env
+
+# In case windows
+wsl touch .env 
+#consider install wsl in windows if you do not have, it's a windows subsystem for linux
+```
+
+then, inside the .env file
+
+```bash
+earth_hub_key = your_earth_hub_key
+```
+
