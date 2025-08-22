@@ -3,8 +3,11 @@ channels:
   - conda-forge
   - defaults
   - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
 dependencies:
   - _openmp_mutex=4.5=2_gnu
+  - aom=3.9.1=he0c23c2_0
   - asttokens=3.0.0=pyhd8ed1ab_1
   - blosc=1.21.6=hfd34d9b_1
   - branca=0.8.1=pyhd8ed1ab_0
@@ -12,10 +15,10 @@ dependencies:
   - brotli-bin=1.1.0=h2466b09_2
   - brotli-python=1.1.0=py313h5813708_2
   - bzip2=1.0.8=h2466b09_7
-  - ca-certificates=2025.4.26=h4c7d964_0
+  - ca-certificates=2025.6.15=h4c7d964_0
   - cairo=1.18.4=h5782bbf_0
   - cartopy=0.24.0=py313hf91d08e_0
-  - certifi=2025.4.26=pyhd8ed1ab_0
+  - certifi=2025.6.15=pyhd8ed1ab_0
   - cffi=1.17.1=py313ha7868ed_0
   - charset-normalizer=3.4.2=pyhd8ed1ab_0
   - colorama=0.4.6=pyhd8ed1ab_1
@@ -23,11 +26,13 @@ dependencies:
   - contourpy=1.3.2=py313h1ec8472_0
   - cpython=3.13.3=py313hd8ed1ab_101
   - cycler=0.12.1=pyhd8ed1ab_1
+  - dav1d=1.2.1=hcfcfb64_0
   - debugpy=1.8.14=py313h5813708_0
   - decorator=5.2.1=pyhd8ed1ab_0
   - double-conversion=3.3.1=he0c23c2_0
   - exceptiongroup=1.2.2=pyhd8ed1ab_1
   - executing=2.2.0=pyhd8ed1ab_0
+  - ffmpeg=7.1.1=gpl_h37769ee_905
   - folium=0.19.5=pyhd8ed1ab_0
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
   - font-ttf-inconsolata=3.000=h77eed37_0
@@ -39,6 +44,8 @@ dependencies:
   - fonttools=4.57.0=py313hb4c8b1a_0
   - freetype=2.13.3=h57928b3_1
   - freexl=2.0.0=hf297d47_2
+  - fribidi=1.0.10=h8d14728_0
+  - gdk-pixbuf=2.42.12=hed59a49_0
   - geopandas=1.0.1=pyhd8ed1ab_3
   - geopandas-base=1.0.1=pyha770c72_3
   - geos=3.13.1=h9ea8674_0
@@ -62,6 +69,7 @@ dependencies:
   - jupyter_core=5.8.1=pyh5737063_0
   - kiwisolver=1.4.7=py313h1ec8472_0
   - krb5=1.21.3=hdf4eb48_0
+  - lame=3.100=hcfcfb64_1003
   - lcms2=2.17=hbcf6048_0
   - lerc=4.0.0=h6470a55_1
   - libarchive=3.7.7=h5343c79_4
@@ -89,13 +97,18 @@ dependencies:
   - liblapack=3.9.0=31_h1aa476e_mkl
   - liblzma=5.8.1=h2466b09_0
   - libmpdec=4.0.0=h2466b09_0
+  - libogg=1.3.5=h2466b09_1
+  - libopus=1.5.2=h2466b09_0
   - libpng=1.6.47=h7a4582a_0
+  - librsvg=2.58.4=h5ce5fed_3
   - librttopo=1.1.0=hbfc9ebc_18
   - libsodium=1.0.20=hc70643c_0
   - libspatialite=5.1.0=h378fb81_14
   - libsqlite=3.49.1=h67fdade_2
   - libssh2=1.11.1=h9aa295b_0
   - libtiff=4.7.0=h797046b_4
+  - libusb=1.0.29=h1839187_0
+  - libvorbis=1.3.7=h0e60522_0
   - libwebp-base=1.5.0=h3b0e114_0
   - libwinpthread=12.0.0.r4.gg4f2fc60ca=h57928b3_9
   - libxcb=1.17.0=h0e4246c_0
@@ -115,16 +128,19 @@ dependencies:
   - nest-asyncio=1.6.0=pyhd8ed1ab_1
   - networkx=3.4.2=pyh267e887_2
   - numpy=2.2.5=py313hefb8edb_0
+  - openh264=2.6.0=hb17fa0b_0
   - openjpeg=2.5.3=h4d64b90_0
   - openssl=3.5.0=ha4e3fda_1
   - packaging=25.0=pyh29332c3_1
   - pandas=2.2.3=py313hf91d08e_3
+  - pango=1.56.3=h0c53d3b_1
   - parso=0.8.4=pyhd8ed1ab_1
   - pcre2=10.44=h99c9b8b_2
   - pickleshare=0.7.5=pyhd8ed1ab_1004
   - pillow=11.1.0=py313hda88b71_0
   - pip=25.1.1=pyh145f28c_0
   - pixman=0.46.0=had0cd8c_0
+  - platformdirs=4.3.8=pyhe01879c_0
   - proj=9.6.0=h4f671f6_1
   - prompt-toolkit=3.0.51=pyha770c72_0
   - psutil=7.0.0=py313ha7868ed_0
@@ -149,12 +165,15 @@ dependencies:
   - requests=2.32.3=pyhd8ed1ab_1
   - scikit-learn=1.6.1=py313h4f67946_0
   - scipy=1.15.2=py313h2eca4b9_0
+  - sdl2=2.32.54=he0c23c2_0
+  - sdl3=3.2.16=ha4196fd_0
   - setuptools=80.1.0=pyhff2d567_0
   - shapely=2.1.0=py313h410098b_0
   - six=1.17.0=pyhd8ed1ab_0
   - snappy=1.2.1=h500f7fa_1
   - sqlite=3.49.1=h2466b09_2
   - stack_data=0.6.3=pyhd8ed1ab_1
+  - svt-av1=3.0.2=he0c23c2_0
   - tbb=2021.13.0=h62715c5_1
   - threadpoolctl=3.6.0=pyhecae5ae_0
   - tk=8.6.13=h5226925_1
@@ -168,8 +187,11 @@ dependencies:
   - urllib3=2.4.0=pyhd8ed1ab_0
   - vc=14.3=h2b53caa_26
   - vc14_runtime=14.42.34438=hfd919c2_26
+  - vs2015_runtime=14.42.34438=h7142326_26
   - wcwidth=0.2.13=pyhd8ed1ab_1
   - win_inet_pton=1.1.0=pyh7428d3b_8
+  - x264=1!164.3095=h8ffe710_2
+  - x265=3.5=h2d74725_3
   - xarray=2025.4.0=pyhd8ed1ab_0
   - xerces-c=3.2.5=he0c23c2_2
   - xorg-libxau=1.0.12=h0e40799_0
@@ -184,54 +206,96 @@ dependencies:
       - aiohappyeyeballs==2.6.1
       - aiohttp==3.12.6
       - aiosignal==1.3.2
+      - anyio==4.9.0
+      - argon2-cffi==25.1.0
+      - argon2-cffi-bindings==21.2.0
+      - arrow==1.3.0
+      - async-lru==2.0.5
       - attrs==25.3.0
       - audioop-lts==0.2.1
       - av==13.1.0
+      - babel==2.17.0
       - beautifulsoup4==4.13.4
+      - bleach==6.2.0
       - click==8.1.8
       - cloudpickle==3.1.1
       - cloup==3.0.7
       - crc32c==2.7.1
       - dask==2025.5.1
+      - defusedxml==0.7.1
       - donfig==0.8.1.post1
       - fastjsonschema==2.21.1
+      - fqdn==1.5.1
       - frozenlist==1.6.0
       - fsspec==2025.5.1
       - glcontext==3.0.0
+      - h11==0.16.0
+      - httpcore==1.0.9
+      - httpx==0.28.1
+      - isoduration==20.11.0
       - isosurfaces==0.1.2
+      - json5==0.12.0
+      - jsonpointer==3.0.0
       - jsonschema==4.24.0
       - jsonschema-specifications==2025.4.1
+      - jupyter-events==0.12.0
+      - jupyter-lsp==2.2.5
+      - jupyter-server==2.16.0
+      - jupyter-server-terminals==0.5.3
+      - jupyterlab==4.4.3
+      - jupyterlab-pygments==0.3.0
+      - jupyterlab-server==2.27.3
       - locket==1.0.0
       - manim==0.19.0
       - manimpango==0.6.0
       - mapbox-earcut==1.0.3
       - markdown-it-py==3.0.0
       - mdurl==0.1.2
+      - mediapy==1.2.4
+      - mistune==3.1.3
       - moderngl==5.12.0
       - moderngl-window==3.1.1
       - multidict==6.4.4
+      - nbclient==0.10.2
+      - nbconvert==7.16.6
       - nbformat==5.10.4
+      - notebook-shim==0.2.4
       - numcodecs==0.16.1
+      - overrides==7.7.0
+      - pandocfilters==1.5.1
       - partd==1.4.2
       - pigar==2.1.7
-      - platformdirs==4.3.8
+      - prometheus-client==0.22.1
       - propcache==0.3.1
       - pycairo==1.28.0
       - pydub==0.25.1
       - pyglet==2.1.6
       - pyglm==2.8.2
+      - python-json-logger==3.3.0
       - pywin32==310
+      - pywinpty==2.0.15
       - pyyaml==6.0.2
       - referencing==0.36.2
+      - rfc3339-validator==0.1.4
+      - rfc3986-validator==0.1.1
       - rich==14.0.0
       - rpds-py==0.25.1
       - screeninfo==0.8.1
+      - send2trash==1.8.3
       - skia-pathops==0.8.0.post2
+      - sniffio==1.3.1
       - soupsieve==2.7
       - srt==3.5.3
       - svgelements==1.9.6
+      - terminado==0.18.1
+      - tinycss2==1.4.0
       - toolz==1.0.0
+      - types-python-dateutil==2.9.0.20250516
+      - uri-template==1.3.0
       - watchdog==6.0.0
+      - webcolors==24.11.1
+      - webencodings==0.5.1
+      - websocket-client==1.8.0
       - yarl==1.20.0
       - zarr==3.0.8
-prefix: C:\Users\Emanuel\Miniconda3\envs\manim
+prefix: C:\Users\JM505 Computers\anaconda3\envs\manim
